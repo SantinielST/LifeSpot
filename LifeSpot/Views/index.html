@@ -1,10 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LifeSpot</title>
+   <meta charset="UTF-8">
+   <title>LifeSpot</title>
+   <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <p>Приветствуем на LifeSpot!</p>
+    <header id="header-index">
+        <!--Заголовок страницы-->
+        <h1>LifeSpot - прямые трансляции с улиц</h1>
+        <!--Параграф-->
+        <p>Покажем, что происходит прямо сейчас</p>
+        <input class="textblock"/>
+    </header>
+    <aside id="sidebar">
+        <div class="navbar">
+            <a href="/"><p>Все трансляции</p></a>
+            <a href="/"><p>О проекте</p></a>
+        </div>
+    </aside>
+    <div class="bordered">
+        <div class="video-container">
+            <h3>Нью-Йорк, Брайант Парк</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/83VPsAPWiME?si=t1gc4uK2_GydB0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!--Санкт-Петербург-->
+        <div class="video-container">
+            <h3>Санкт-Петербург, Невский Проспект</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h1wly909BYw?si=Jk5wGvdNpfwfs7qG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!--Лондон-->
+        <div class="video-container">
+            <h3>Лондон, автобусный маршрут</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>LifeSpot - все права защищены</p>
+        <p>Связаться с нами: contact@lifespot.ru</p>
+    </footer>
 </body>
 </html>
