@@ -4,6 +4,10 @@
     padding-left: 1%;
     }
 
+.video-title{
+    font: 100;
+}
+
 .textblock {
     padding: 5px;
     width: 300px;
