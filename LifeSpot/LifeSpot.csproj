@@ -4,4 +4,11 @@
         <TargetFramework>net9.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\CSS\Index.css" />
+      <None Include="wwwroot\JS\about.js" />
+      <None Include="wwwroot\JS\index.js" />
+      <None Include="wwwroot\JS\testing.js" />
+    </ItemGroup>
+
 </Project>

@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
-    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
-    <script src="../Static/JS/index.js"></script>
-    <script src="../Static/JS/filter.js"></script>
+    <link href="../wwwroot/CSS/index.css" rel="stylesheet" type="text/css">
+    <!-- Внешний скрипт с функциями -->
+    <script type="text/javascript" src="../wwwroot/JS/index.js"></script>
+    <!-- Внутренний скрипт с вызовами функций -->
+    <script>
+        // Проверка на возраст
+        checkAge();
+
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода    
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+
+        /*
+        * Всплывающее окно будет показано по таймауту
+        * 
+        * */
+        setTimeout(() =>
+            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+            30000);
+    </script>
 </head>
 <!--SIDEBAR-->
 <body>
@@ -14,7 +38,7 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
-        <input class="textblock" type="text" oninput="filter()" />
+        <input class="textblock" type="text" oninput="filterContent()" />
     </header>
     <div class="bordered">
         <div class="video-container">
