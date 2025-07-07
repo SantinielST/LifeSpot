@@ -8,16 +8,10 @@
     <script type="text/javascript" src="../wwwroot/JS/index.js"></script>
     <!-- Внутренний скрипт с вызовами функций -->
     <script>
-        // Проверка на возраст
-        checkAge();
+        // обработка сессии
+        handleSession(logger, checker /* Коллбек-функции */);
 
-        // сохранение сессии
-        handleSession()
-
-        // вывод данных сессии в консоль
-        sessionLog();
-
-        // функция для получения пользовательского ввода    
+        // функция для получения пользовательского ввода   
         const inputParseFunction = function () {
             return document.getElementsByTagName('input')[0].value.toLowerCase();
         }
